@@ -23,8 +23,7 @@ class ProfileCardPage extends StatelessWidget {
               children: [
                 const CircleAvatar(
                   radius: 50,
-                  backgroundImage:
-                      AssetImage("assets/picture.jpeg"),
+                  backgroundImage: AssetImage("assets/picture.jpeg"),
                 ),
 
                 const SizedBox(height: 15),
@@ -48,6 +47,31 @@ class ProfileCardPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 20),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.code),
+                      onPressed: () {},
+                    ),
+
+                    IconButton(
+                      icon: const Icon(Icons.web),
+                      onPressed: () {},
+                    ),
+
+                    IconButton(
+                      icon: const Icon(Icons.email),
+                      onPressed: () {},
+                    ),
+
+                    IconButton(
+                      icon: const Icon(Icons.business_center),
+                      onPressed: () {},
+                    ),
+                  ],
+                ),
 
                 ElevatedButton(
                   onPressed: () {
